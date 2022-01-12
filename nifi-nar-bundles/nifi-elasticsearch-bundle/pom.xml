@@ -29,8 +29,6 @@ language governing permissions and limitations under the License. -->
         <module>nifi-elasticsearch-client-service-nar</module>
         <module>nifi-elasticsearch-nar</module>
         <module>nifi-elasticsearch-processors</module>
-        <module>nifi-elasticsearch-5-nar</module>
-        <module>nifi-elasticsearch-5-processors</module>
         <module>nifi-elasticsearch-restapi-nar</module>
         <module>nifi-elasticsearch-restapi-processors</module>
     </modules>
@@ -50,11 +48,6 @@ language governing permissions and limitations under the License. -->
             </dependency>
             <dependency>
                 <groupId>org.apache.nifi</groupId>
-                <artifactId>nifi-elasticsearch-5-processors</artifactId>
-                <version>1.16.0-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.nifi</groupId>
                 <artifactId>nifi-elasticsearch-restapi-processors</artifactId>
                 <version>1.16.0-SNAPSHOT</version>
             </dependency>
@@ -63,14 +56,6 @@ language governing permissions and limitations under the License. -->
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-compress</artifactId>
                 <version>1.21</version>
-            </dependency>
-            <!-- Override log4j 2.11.1 -->
-            <dependency>
-                <groupId>org.apache.logging.log4j</groupId>
-                <artifactId>log4j-bom</artifactId>
-                <version>2.15.0</version>
-                <scope>import</scope>
-                <type>pom</type>
             </dependency>
         </dependencies>
     </dependencyManagement>
